@@ -55,12 +55,12 @@
 			</header>
 			<div id="gallery">
 				<div class="inner">
-					<div class="image" style="background-image:url('imagenes/Embutidos/AGUILA Drive/DSC_0010.JPG')"></div>
-					<div class="image" style="background-image:url('imagenes/Embutidos/AGUILA Drive/DSC_0024.JPG')"></div>
-					<div class="image" style="background-image:url('imagenes/Embutidos/AGUILA Drive/DSC_0043.JPG')"></div>
-					<div class="image" style="background-image:url('imagenes/Embutidos/AGUILA Drive/DSC_0046.JPG')"></div>
-					<div class="image" style="background-image:url('imagenes/Embutidos/AGUILA Drive/DSC_0067.JPG')"></div>
-					<div class="image" style="background-image:url('imagenes/Embutidos/AGUILA Drive/DSC_0077.JPG')"></div>
+					<div class="image" style="background-image:url('imagenes/DSC_0283.JPG')"></div>
+					<div class="image" style="background-image:url('imagenes/DSC_0285.JPG')"></div>
+					<div class="image" style="background-image:url('imagenes/DSC_0289.JPG')"></div>
+					<div class="image" style="background-image:url('imagenes/DSC_0313.JPG')"></div>
+					<div class="image" style="background-image:url('imagenes/DSC_0315.JPG')"></div>
+					<div class="image" style="background-image:url('imagenes/DSC_0318.JPG')"></div>
 				</div>
 			</div>
 
