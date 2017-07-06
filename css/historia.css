@@ -1,0 +1,26 @@
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin-top: 80px;  /*Space out the Bootstrap <hr> more */
+  border-top: 2px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+/* Thin out the marketing headings */
+	.featurette-heading {
+	  font-weight: 300;
+	  line-height: 1;
+	  letter-spacing: -1px;
+		font-size: 25px;
+	}
+
+	.featurette-image {
+	margin-top: 15%;
+	}
+
+  @media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 1em;
+  }
+}
