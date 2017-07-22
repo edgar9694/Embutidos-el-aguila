@@ -22,73 +22,33 @@
 				<source src="videos/webm/embutidos.webm" type="video/webm">
 			</video>
 		</div>
-    <div class="row full-height middle-xs center-xs relative up" id="home">
-			<div class="col-xs-12">
-        <div class="box white-text">
-          <img src="imagenes/logo.png" width="500">
-        </div>
-      </div>
-				<nav class="fixed top up right-text navigation large" id="navigation">
-					<ul>
-						<li id="li">
-							<a href="index.php">Inicio</a>
-						</li>
-						<li>
-							<a href="historia.php">Historia</a>
-						</li>
-						<li>
-							<a href="recetas.php">Recetas</a>
-						</li>
-						<li>
-							<a href="galeria.php">Productos</a>
-						</li>
-						<li>
-							<a href="contacto.php">Contacto</a>
-						</li>
-						<div class="mediabuttons" >
-							<div class="socialsy bgfc">
-								<div>
-									<i class="fa fa-facebook"></i>
-								</div>
-							</div>
-							<div class="socialsy bgyt">
-								<div href="#">
-									<i class="fa fa-youtube"></i>
-								</div>
-							</div>
-							<div class="socialsy bgins">
-								<div>
-									<i class="fa fa-instagram"></i>
-								</div>
-							</div>
-						</div>
-					</ul>
-				</nav>
-			<div class="absolute black large-padding white-text full-width" id="description">
-				<div class="row middle-xs center-xs">
-					<div class="col-xs-2 col-sm-2"  id="logo">
-						<img class="logo" src="imagenes/logo2.png" width="100%"/>
+		<nav class="fixed top up transparent" id="navigation">
+				<div class="container-fluid">
+					<button class=" toggle">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+					</button>
+					<div class="overlay">
 					</div>
-					<div class="col-xs" id="sticky-navigation">
-						<div class="box">
-							<nav class="text-right navigation small" id="responsive-nav">
-								<i class="glyphicon glyphicon-menu-hamburger white-text subtitle glyphicon-remove" id="menu-opener"></i
-									<ul>
-										<li id="li">
-											<a href="index.php">Inicio</a>
-										</li>
-										<li>
-											<a href="historia.php">Historia</a>
-										</li>
-										<li>
-											<a href="recetas.php">Recetas</a>
-										</li>
-										<li>
-											<a href="galeria.php">Productos</a>
-										</li>
-										<li>
-											<a href="contacto.php">Contacto</a>
-										</li>
+						<div class="navigation-brand"><img src="imagenes/logo2.png" class="hidden" alt="" width="200px" id="logo"></div>
+								<ul class="navigation-list list-unstyled pull-right">
+									<li>
+										<a href="index.php">Inicio</a>
+									</li>
+									<li>
+										<a href="historia.php">Historia</a>
+									</li>
+									<li>
+										<a href="recetas.php">Recetas</a>
+									</li>
+									<li>
+										<a href="galeria.php">Productos</a>
+									</li>
+									<li>
+										<a href="contacto.php">Contacto</a>
+									</li>
+									<li>
 										<div class="mediabuttons" >
 											<div class="socialsy bgfc">
 												<div>
@@ -106,11 +66,17 @@
 												</div>
 											</div>
 										</div>
-									</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
+									</li>
+								</ul>
+							</div>
+				</nav>
+    <div class="row full-height middle-xs center-xs up" id="home">
+			<div class="col-xs-12">
+        <div class="box white-text">
+          <img src="imagenes/logo.png" width="500">
+        </div>
+      </div>
+			<div class="absolute black large-padding white-text full-width" id="description">
 			</div>
     </div>
 		<div class="text-center relative" id="menu">
@@ -183,6 +149,7 @@
 
 
   <script  src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 	<script src="js/main.js"></script>
 <!--JS code para la barra nav-->
 <script type="text/javascript">
@@ -211,6 +178,41 @@ setInterval(()=>{
 			$("header").removeClass("small").addClass("large");
 			}
 		});
+</script>
+<script>
+$(function () {
+    $(".toggle").click(function () {
+        showNavDrawer();
+        $(this).toggleClass('change')
+    });
+    $(window).width(function () {
+        sideNav();
+    });
+    $(window).resize(function () {
+        sideNav();
+    });
+    $("nav .overlay").click(function () {
+        $("nav .navigation-list").toggleClass("nav-collsaped");
+        $("nav .overlay").toggleClass("body-overlay");
+        $(".toggle").removeClass("change");
+
+    });
+    function sideNav(){
+        if($(window).width()<=980){
+        }
+        else {
+            $("nav .navigation-list").removeClass("nav-collsaped");
+            $("nav .overlay").removeClass("body-overlay");
+            $(".toggle").removeClass("change");
+        }
+    }
+    function showNavDrawer(){
+        $("nav .navigation-list").toggleClass("nav-collsaped");
+        $("nav .overlay").toggleClass("body-overlay");
+    }
+});
+
+
 </script>
 
   </body>
